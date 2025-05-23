@@ -158,7 +158,17 @@ export default function CaseStudies() {
                   que se puede implementar en cualquier ámbito. Cada acción, por pequeña que sea, contribuye a un
                   impacto colectivo significativo.
                 </p>
-                <Button3d variant="glow">Explora Más Casos de Estudio</Button3d>
+                <Button3d
+                  variant="glow"
+                  onClick={() =>
+                    window.open(
+                      "https://www.significados.com/10-ejemplos-de-desarrollo-sustentable-en-el-mundo/",
+                      "_blank",
+                    )
+                  }
+                >
+                  Explora Más Casos de Estudio
+                </Button3d>
               </Card3dContent>
             </Card3d>
           </div>

@@ -1,9 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Menu, X, Leaf, Search, ChevronDown } from "lucide-react"
+import { Menu, X, Leaf, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { Button3d } from "@/components/ui/button-3d"
 import { motion, AnimatePresence } from "framer-motion"
 
 export default function NavBar() {
@@ -100,26 +99,7 @@ export default function NavBar() {
             </button>
           </div>
 
-          <div className="hidden lg:flex items-center space-x-4">
-            <div
-              className={`relative flex items-center ${isScrolled ? "text-gray-300" : "text-white"} transition-colors`}
-            >
-              <Search className="absolute left-3 h-4 w-4" />
-              <input
-                type="text"
-                placeholder="Buscar..."
-                className={`pl-10 pr-4 py-2 rounded-full text-sm focus:outline-none ${
-                  isScrolled
-                    ? "bg-gray-900 text-gray-200 focus:ring-2 focus:ring-green-500"
-                    : "bg-black/30 text-white placeholder:text-white/70 backdrop-blur-sm focus:bg-black/50"
-                } transition-all duration-300`}
-              />
-            </div>
-
-            <Button3d variant="default" size="sm">
-              Contacto
-            </Button3d>
-          </div>
+          <div className="hidden lg:flex items-center space-x-4"></div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">
@@ -167,22 +147,9 @@ export default function NavBar() {
                 Herramientas
               </button>
 
-              <div className="pt-4 pb-3 border-t border-green-900/50">
-                <div className="flex items-center px-3">
-                  <div className="relative flex-grow">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
-                    <input
-                      type="text"
-                      placeholder="Buscar..."
-                      className="w-full pl-10 pr-4 py-2 rounded-full text-sm bg-gray-900 text-gray-200 focus:outline-none focus:ring-2 focus:ring-green-500"
-                    />
-                  </div>
-                </div>
-              </div>
+              <div className="pt-4 pb-3 border-t border-green-900/50"></div>
 
-              <div className="px-3 py-2">
-                <Button3d className="w-full">Contacto</Button3d>
-              </div>
+              <div className="px-3 py-2"></div>
             </div>
           </motion.div>
         )}

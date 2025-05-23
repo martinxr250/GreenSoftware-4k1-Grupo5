@@ -20,9 +20,11 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://github.com/martinxr250/GreenSoftware-4k1-Grupo5"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-green-900 hover:bg-green-800 p-2 rounded-full transition-colors duration-300 hover:shadow-[0_0_10px_rgba(16,185,129,0.5)]"
-                aria-label="GitHub"
+                aria-label="GitHub del Proyecto"
               >
                 <Github className="h-5 w-5" />
               </a>

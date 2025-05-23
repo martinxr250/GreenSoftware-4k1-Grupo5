@@ -71,11 +71,29 @@ export default function ResourcesLibrary() {
                   </Card3dHeader>
                   <Card3dContent className="pt-6">
                     <div className="flex gap-3">
-                      <Button3d variant="glow" className="flex-1">
+                      <Button3d
+                        variant="glow"
+                        className="flex-1"
+                        onClick={() =>
+                          window.open(
+                            "https://www.canva.com/design/DAGkXH6CItY/OnwjHH6GbSg0_8-LEUpn4Q/view?utm_content=DAGkXH6CItY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7736ccf775",
+                            "_blank",
+                          )
+                        }
+                      >
                         <Download className="h-4 w-4 mr-2" />
                         Descargar
                       </Button3d>
-                      <Button3d variant="outline" className="flex-1">
+                      <Button3d
+                        variant="outline"
+                        className="flex-1"
+                        onClick={() =>
+                          window.open(
+                            "https://www.canva.com/design/DAGkXH6CItY/OnwjHH6GbSg0_8-LEUpn4Q/view?utm_content=DAGkXH6CItY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h7736ccf775",
+                            "_blank",
+                          )
+                        }
+                      >
                         <ExternalLink className="h-4 w-4 mr-2" />
                         Ver Online
                       </Button3d>
